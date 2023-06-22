@@ -1,0 +1,1 @@
+Hello this is a read file and we are reading it from fs module.
