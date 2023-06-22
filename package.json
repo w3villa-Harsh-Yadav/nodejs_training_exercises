@@ -1,0 +1,19 @@
+{
+  "name": "node_js_training_exercises",
+  "version": "1.0.0",
+  "description": "This repository contains the code of the exercises given in node js training .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3villa-Harsh-Yadav/nodejs_training_exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w3villa-Harsh-Yadav/nodejs_training_exercises/issues"
+  },
+  "homepage": "https://github.com/w3villa-Harsh-Yadav/nodejs_training_exercises#readme"
+}
