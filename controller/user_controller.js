@@ -65,6 +65,13 @@ const loginuser = async(req,res) => {
             })
         }
 
+        if(!(user[0].password === password)){
+            return res.status(403).json({
+                status:false,
+                msg: 'Please provide valid credentials'
+            })
+        }
+
         const token = jwt.sign({username:user[0].username,email:user[0].email},process.env.SECRET_KEY);
 
         return res.json({
