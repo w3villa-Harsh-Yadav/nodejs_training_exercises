@@ -3,9 +3,9 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
 const model = require('../model/model');
+const { authenticate } = require("../middleware/authenticate");
 
-
-const createuser = async(req,res) => {
+const createUser = async(req,res) => {
     try {
         const { username, email, password } = req.body;
 
@@ -52,7 +52,7 @@ const createuser = async(req,res) => {
     }
 }
 
-const loginuser = async(req,res) => {
+const loginUser = async(req,res) => {
     try {
         const { email, password } = req.body;
         if(!email || !password){
@@ -97,7 +97,35 @@ const loginuser = async(req,res) => {
     }
 }
 
+
+const getUser = async(req,res) => {
+    try {
+        let user = await authenticate(req);
+
+        if(user == null){
+            return res.status(400).json({
+                status: false,
+                msg: 'User not authorized to perform the operation',
+            });
+        }
+
+        return res.json({
+            status:true,
+            user:user
+        })
+
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            status:false,
+            msg:'Some internal error occured'
+        });
+    }
+
+}
+
 module.exports = {
-    createuser,
-    loginuser
+    createUser,
+    loginUser,
+    getUser
 }
