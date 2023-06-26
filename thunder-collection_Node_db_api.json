@@ -1,0 +1,109 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Node_db_api",
+    "dateExported": "2023-06-26T06:39:13.735Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "09a807fa-adf2-45de-9482-1b75ff8743b3",
+            "colId": "14f6aee4-a3f3-483c-a3c8-d596948eae41",
+            "containerId": "",
+            "name": "Create user",
+            "url": "http://127.0.0.1:3000/api/v1/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-24T08:19:09.394Z",
+            "modified": "2023-06-26T06:33:57.020Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Abhishek\",\n  \"email\":\"abhishekpandit5599@gmail.com\",\n  \"password\":\"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ff4b36a8-7582-4670-95d7-65386e687e42",
+            "colId": "14f6aee4-a3f3-483c-a3c8-d596948eae41",
+            "containerId": "",
+            "name": "Login User",
+            "url": "http://127.0.0.1:3000/api/v1/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-24T08:25:55.687Z",
+            "modified": "2023-06-26T06:34:24.200Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"abhishekpandit5599@gmail.com\",\n  \"password\":\"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bf1e8fda-84dc-4831-98de-ac00c59aca50",
+            "colId": "14f6aee4-a3f3-483c-a3c8-d596948eae41",
+            "containerId": "",
+            "name": "get user",
+            "url": "http://127.0.0.1:3000/api/v1/getUser",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-06-24T08:26:04.992Z",
+            "modified": "2023-06-26T06:35:17.923Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFiaGlzaGVrIiwiZW1haWwiOiJhYmhpc2hla3BhbmRpdDU1OTlAZ21haWwuY29tIiwiaWF0IjoxNjg3NzYxMjY0fQ.iIW-9-90M7960Xs6CoXzqLueQnqIPBfJQnpXnvXEnD0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "58b9b7e7-1b3c-4e05-93e2-aa14283a5ef5",
+            "colId": "14f6aee4-a3f3-483c-a3c8-d596948eae41",
+            "containerId": "",
+            "name": "update user",
+            "url": "http://127.0.0.1:3000/api/v1/updateUser",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-06-24T08:26:13.199Z",
+            "modified": "2023-06-26T06:35:47.285Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFiaGlzaGVrIiwiZW1haWwiOiJhYmhpc2hla3BhbmRpdDU1OTlAZ21haWwuY29tIiwiaWF0IjoxNjg3NzYxMjY0fQ.iIW-9-90M7960Xs6CoXzqLueQnqIPBfJQnpXnvXEnD0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\":\"123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "59cbe535-3765-4ed7-9c37-416ca0477284",
+            "colId": "14f6aee4-a3f3-483c-a3c8-d596948eae41",
+            "containerId": "",
+            "name": "delete user",
+            "url": "http://127.0.0.1:3000/api/v1/deleteUser",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-06-24T08:26:29.437Z",
+            "modified": "2023-06-26T06:38:57.843Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFiaGlzaGVrIiwiZW1haWwiOiJhYmhpc2hla3BhbmRpdDU1OTlAZ21haWwuY29tIiwiaWF0IjoxNjg3NzYxNTIzfQ.rHU7tAiJG07aaxKdR9Lf1uYmVXxdBlFS9ohTvxo2i9w"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
