@@ -1,0 +1,66 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Node_auth_api",
+    "dateExported": "2023-06-26T13:14:07.492Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "78798a84-6ac6-47c1-ad65-34d48234b226",
+            "colId": "15d5e360-826c-4e0e-b2ab-eb39c051c26b",
+            "containerId": "",
+            "name": "Register User",
+            "url": "http://127.0.0.1:3000/api/v1/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-26T07:28:23.777Z",
+            "modified": "2023-06-26T13:08:12.414Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Abhishek\",\n  \"email\":\"abhishekpandit5599@gmail.com\",\n  \"password\":\"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d523efd1-c4a2-4dbe-bbfa-3f4cd21e1240",
+            "colId": "15d5e360-826c-4e0e-b2ab-eb39c051c26b",
+            "containerId": "",
+            "name": "Login User",
+            "url": "http://127.0.0.1:3000/api/v1/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-26T07:28:30.099Z",
+            "modified": "2023-06-26T13:11:07.363Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"abhishekpandit5599@gmail.com\",\n  \"password\":\"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce9178cb-c89d-4f55-aec8-fcc9d94b5738",
+            "colId": "15d5e360-826c-4e0e-b2ab-eb39c051c26b",
+            "containerId": "",
+            "name": "Get User",
+            "url": "http://127.0.0.1:3000/api/v1/getuser",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-26T08:01:49.132Z",
+            "modified": "2023-06-26T13:11:31.159Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFiaGlzaGVrIiwiZW1haWwiOiJhYmhpc2hla3BhbmRpdDU1OTlAZ21haWwuY29tIiwiaWF0IjoxNjg3Nzg1MDY3fQ.EcOxfzJx-5Q9N5vewavNQfD7qRQZ7cWtxlllTC-45wA"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
