@@ -1,0 +1,8 @@
+error:Jun-26-2023 18:00:57: Please provide all the details.
+error:Jun-26-2023 18:01:41: 500 - Internal Server Error - user is not defined - /api/v1/register - POST - ::ffff:127.0.0.1
+error:Jun-26-2023 18:04:28: Please provide all the details.
+error:Jun-26-2023 18:04:48: User already exist
+error:Jun-26-2023 18:36:01: Status Code: 404 - Not Found - /ap/v1/registr - POST - ::ffff:127.0.0.1
+error:Jun-26-2023 18:38:12: Status Code: 409 - User already exist - /api/v1/register - POST - ::ffff:127.0.0.1
+error:Jun-26-2023 18:40:55: Status Code: 403 - Invalid credentials - /api/v1/login - POST - ::ffff:127.0.0.1
+error:Jun-26-2023 18:41:31: Status Code: 500 - Internal Server Error - logger is not defined - /api/v1/getuser - GET - ::ffff:127.0.0.1
